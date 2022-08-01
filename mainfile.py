@@ -11,6 +11,7 @@ with open('textMiningExample.txt') as myFile, open('stop_words_english.txt') as 
         a = myFile.read().split()
         b = stopWordsFile.read().split()
 
+        #likely to marge some portion of unicode character removal into other file
 
 
 
