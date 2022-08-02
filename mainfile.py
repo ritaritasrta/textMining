@@ -6,6 +6,10 @@ with open('textMiningExample.txt') as myFile, open('stop_words_english.txt') as 
          #clean data by making all alpha lowercase
         line = line.lower() 
 
+    #next split the file sentences into different lines
+    #split by using period
+
+
         #remove all unicode characters
         line.encode('ascii', 'ignore').decode()
         a = myFile.read().split()
