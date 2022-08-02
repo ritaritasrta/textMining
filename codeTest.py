@@ -9,13 +9,17 @@ with open('textMiningExample.txt', 'r') as file:
     for lines in file:
         lines = lines.lower()
 
-    #next split the file sentences into different lines
-    #split by using period
+    #next split the file sentences into different sentences
+    #use nltk tokenize lib function
     token_text = sent_tokenize(file)
     print(token_text)
 
-    
-    
+    #remove any/all unicode characters
+    for i in lines:
+        file_all_ascii = file.encode("ascii", "ignore")
+
+
+
 
 
 
